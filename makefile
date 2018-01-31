@@ -4,9 +4,11 @@ add_title:
 	echo "GuessingGame rocks!" > README.md
 
 add_date:
-	date >> ReadMe.md
+	echo "" >> README.md
+	date >> README.md
 
 add_lines:
+	echo "" >> README.md
 	wc -l < guessinggame.sh | xargs >> README.md
 
 clean:
